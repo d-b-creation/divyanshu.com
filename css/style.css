@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
 
+:root {
+  --body-color: #00204a;
+  --head-bg-color: #003477;
+  --small-span-color: #00bbf0;
+  --hover-color: #007fa4;
+  --primary-color: #ffffff;
+}
+
+
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #0c0c0c;
