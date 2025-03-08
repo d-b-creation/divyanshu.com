@@ -3,18 +3,19 @@
 :root {
   --body-color: #00204a;
   --head-bg-color: #003477;
-  --small-span-color: #00bbf0;
+  --active-color: #00bbf0;
   --hover-color: #007fa4;
   --primary-color: #ffffff;
 }
 
-
-
+* {
+  color: var(--primary-color);
+}
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #0c0c0c;
-  background-color: #fff;
+  color: var(--primary-color);
+  background-color: var(--body-color);
   overflow-x: hidden;
 }
 
@@ -95,6 +96,7 @@ a:focus {
   box-shadow: none;
 }
 
+
 /*header section*/
 .hero_area {
   position: relative;
@@ -147,7 +149,14 @@ a:focus {
 }
 
 .header_section {
+  width: 100%;
+  background: var(--head-bg-color);
   padding: 15px 0;
+  box-shadow: 0 2px 20px #001e46;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
 .header_section .container-fluid {
@@ -170,34 +179,25 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
+  /* background: #00bbf0; */
   padding: 5px 20px;
   color: #ffffff;
   text-align: center;
-  text-transform: uppercase;
-  border-radius: 5px;
+  text-transform: none;
   -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: bolder;
+}
+
+.fa:hover {
+  color: var(--active-color);
+  cursor: pointer;
   transition: all 0.3s;
 }
 
-.custom_nav-container .navbar-nav .nav-item:hover .nav-link,
+.custom_nav-container .navbar-nav .nav-item .nav-link:hover,
 .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #00bbf0;
-}
-
-.custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  font-weight: 600;
-}
-
-.custom_nav-container .nav_search-btn {
-  width: 35px;
-  height: 35px;
-  padding: 0;
-  border: none;
-  color: #ffffff;
-}
-
-.custom_nav-container .nav_search-btn:hover {
-  color: #00bbf0;
+  color: var(--active-color);
 }
 
 .custom_nav-container .navbar-toggler {
@@ -261,6 +261,9 @@ a:focus {
 }
 
 /*end header section*/
+
+
+
 /* slider section */
 .slider_section {
   -webkit-box-flex: 1;
@@ -321,17 +324,15 @@ a:focus {
 .slider_section .detail-box .btn-box .btn1 {
   display: inline-block;
   padding: 10px 15px;
-  background-color: #00bbf0;
+  background-color: var(--active-color);
   color: #ffffff;
-  border-radius: 0;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: none;
   border-radius: 40px;
 }
 
 .slider_section .detail-box .btn-box .btn1:hover {
-  background-color: #007fa4;
+  background-color: var(--hover-color);
 }
 
 .slider_section .detail-box .btn-box .btn2 {
