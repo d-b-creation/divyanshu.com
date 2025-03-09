@@ -428,8 +428,8 @@ a:focus {
   text-align: center;
   margin-top: 45px;
   background: linear-gradient(to bottom, #002759, #002b64);
-  padding: 20px;
-  border-radius: 5px;
+  padding: 20px 30px;
+  border-radius: 10px;
 }
 
 .service_section .box .img-box {
@@ -456,7 +456,7 @@ a:focus {
 }
 
 .service_section .box .detail-box h5 {
-  color: var(--primary-color);
+  color: var(--active-color);
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -464,16 +464,16 @@ a:focus {
 .service_section .box .detail-box p {
   text-align: justify;
   font-weight: 600;
-  color: var(--hover-color);
+  color: var(--primary-color);
 }
 
 .service_section .box .detail-box a {
-  color: var(--primary-color);
+  color: var(--active-color);
   font-weight: 900;
 }
 
 .service_section .box .detail-box a:hover {
-  color: var(--active-color);
+  color: var(--hover-color);
 }
 
 .service_section .btn-box {
