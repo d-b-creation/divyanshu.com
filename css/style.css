@@ -427,7 +427,7 @@ a:focus {
   align-items: center;
   text-align: center;
   margin-top: 45px;
-  background-color: var(--head-bg-color);
+  background: linear-gradient(to bottom, #002759, #002b64);
   padding: 20px;
   border-radius: 5px;
 }
