@@ -17,7 +17,7 @@ body {
   /* font-family: "Open Sans", sans-serif; */
   font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: var(--primary-color);
-  background-color: var(--body-color);
+  background: var(--body-color);
   overflow-x: hidden;
 }
 
@@ -653,6 +653,8 @@ a:focus {
   text-align: center;
   background-color: var(--body-color);
   color: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 172px;
 }
 
 .team_section .heading_container {
