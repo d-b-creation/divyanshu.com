@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 100;
+  font-display: optional;
+  src: url(../fonts/NetflixSans_W_Th.woff2) format("woff2"),
+    url(../fonts/NetflixSans_W_Th.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 300;
+  font-display: optional;
+  src: url(../fonts/NetflixSans_W_Lt.woff2) format("woff2"),
+    url(../fonts/NetflixSans_W_Lt.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 400;
+  font-display: optional;
+  src: url(../fonts/NetflixSans_W_Rg.woff2) format("woff2"),
+    url(../fonts/NetflixSans_W_Rg.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 700;
+  font-display: optional;
+  src: url(../fonts/NetflixSans_W_Md.woff2) format("woff2"),
+    url(../fonts/NetflixSans_W_Md.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 800;
+  font-display: optional;
+  src: url(../fonts/NetflixSans_W_Bd.woff2) format("woff2"),
+    url(../fonts/NetflixSans_W_Bd.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 900;
+  font-display: optional;
+  src: url(../fonts/NetflixSans_W_Blk.woff2) format("woff2"),
+    url(../fonts/NetflixSans_W_Blk.woff) format("woff");
+}
