@@ -13,7 +13,6 @@ html {
   color: var(--primary-color);
 }
 
-
 body {
   /* font-family: "Open Sans", sans-serif; */
   font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -99,7 +98,6 @@ a:focus {
   box-shadow: none;
 }
 
-
 /*header section*/
 .hero_area {
   position: relative;
@@ -151,11 +149,37 @@ a:focus {
   display: none;
 }
 
-.header_section {
+.head-arrangement {
+  top: 10px;
+  position: fixed;
   width: 100%;
-  background: var(--head-bg-color);
-  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.topmarg {
+  margin-top: 80px;
+}
+
+.header_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #002a61;
+  border-radius: 20px;
+  filter: blur(20px);
+}
+
+.header_section {
+  width: 98%;
+  border: 3px solid #001e44;
+  border-radius: 20px;
   box-shadow: 0 2px 20px #001e46;
+  padding: 10px 0;
   opacity: 0;
   animation: headerdown 1s ease 0s forwards;
 }
@@ -278,8 +302,6 @@ a:focus {
 
 /*end header section*/
 
-
-
 /* slider section */
 .slider_section {
   -webkit-box-flex: 1;
@@ -329,12 +351,12 @@ a:focus {
 
 @keyframes slideDown {
   0% {
-      transform: translateX(50px);
-      opacity: 0;
+    transform: translateX(50px);
+    opacity: 0;
   }
   100% {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -426,7 +448,7 @@ a:focus {
   width: 100%;
   -webkit-animation: upDown 6s infinite;
   opacity: 0;
-  animation: zoomineffectimg 1s ease 0.5s forwards,upDown 10s infinite;
+  animation: zoomineffectimg 1s ease 0.5s forwards, upDown 10s infinite;
 }
 
 @keyframes zoomineffectimg {
@@ -456,15 +478,15 @@ a:focus {
 
 @keyframes upDown {
   0% {
-    -webkit-transform: translateY(-45px);
+    -webkit-transform: translateY(-30px);
     transform: translateY(-30px);
   }
   50% {
-    -webkit-transform: translateY(45px);
+    -webkit-transform: translateY(30px);
     transform: translateY(30px);
   }
   100% {
-    -webkit-transform: translateY(-45px);
+    -webkit-transform: translateY(-30px);
     transform: translateY(-30px);
   }
 }
@@ -507,7 +529,6 @@ a:focus {
 }
 
 /* slider section end*/
-
 
 /* service section start */
 
@@ -651,8 +672,6 @@ a:focus {
 .about_section .detail-box a:hover {
   background-color: var(--hover-color);
 }
-
-
 
 /*team section */
 .team_section {
@@ -904,3 +923,14 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+.go-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00bbf0;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  z-index: 1000;
+}
