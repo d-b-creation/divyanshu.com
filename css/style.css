@@ -13,6 +13,7 @@ html {
   color: var(--primary-color);
 }
 
+
 body {
   /* font-family: "Open Sans", sans-serif; */
   font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -142,7 +143,7 @@ a:focus {
 }
 
 .sub_page .hero_area {
-  min-height: auto;
+  min-height: 0;
   background: linear-gradient(130deg, #231a6f, #0f054c);
 }
 
@@ -173,6 +174,10 @@ a:focus {
 .header_section .container-fluid {
   padding-right: 25px;
   padding-left: 25px;
+}
+
+.no-cursor {
+  cursor: default;
 }
 
 .navbar-brand span {
@@ -346,7 +351,7 @@ a:focus {
   color: #fefefe;
   font-size: 14px;
   text-align: justify;
-  font-weight: 600;
+  font-weight: 500;
   opacity: 0;
   animation: slideleftbtn 1s ease 1s forwards;
 }
@@ -560,8 +565,9 @@ a:focus {
 
 .service_section .box .detail-box p {
   text-align: justify;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--primary-color);
+  line-height: 30px;
 }
 
 .service_section .box .detail-box a {
@@ -603,9 +609,9 @@ a:focus {
 /* about section start */
 
 .about_section {
-  background-color: var(--body-color);
+  background: var(--body-color);
   color: #ffffff;
-  border-bottom: 10px solid;
+  border-bottom: 8px solid;
 }
 
 .about_section .heading_container {
@@ -728,7 +734,7 @@ a:focus {
 }
 
 .team_section .team_container .box .social_box a:hover {
-  color: color(srgb red green blue);
+  color: red;
 }
 
 /*team section end*/
@@ -738,6 +744,10 @@ a:focus {
   color: #ffffff;
   padding: 45px 0 15px 0;
   border-top: 10px solid;
+}
+
+.boborder {
+  border-top: 3px solid;
 }
 
 .info_section h4 {
@@ -872,6 +882,11 @@ a:focus {
 }
 
 /* footer section*/
+
+#displayYear {
+  color: var(--body-color);
+}
+
 .footer_section {
   position: relative;
   background-color: #ffffff;
