@@ -169,15 +169,14 @@ a:focus {
   top: 0;
   height: 100%;
   width: 100%;
-  background: #002a61;
-  border-radius: 20px;
-  filter: blur(20px);
+  background: #003f92f5;
+  border-radius: 8px;
 }
 
 .header_section {
   width: 98%;
-  border: 3px solid #001e44;
-  border-radius: 20px;
+  border: 3px solid #004299;
+  border-radius: 10px;
   box-shadow: 0 2px 20px #001e46;
   padding: 10px 0;
   opacity: 0;
@@ -201,7 +200,7 @@ a:focus {
 }
 
 .no-cursor {
-  cursor: default;
+  cursor: pointer;
 }
 
 .navbar-brand span {
@@ -537,6 +536,10 @@ a:focus {
   border-bottom: 10px solid;
 }
 
+.bo-bottom {
+  border-bottom: 2px solid #fff;
+}
+
 .service_section .box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -752,7 +755,7 @@ a:focus {
   font-size: 22px;
 }
 
-.team_section .team_container .box .social_box a:hover {
+.team_section .team_container .box .social_box a .fa:hover {
   color: red;
 }
 
@@ -932,5 +935,9 @@ a:focus {
   height: 40px;
   width: 40px;
   border-radius: 100%;
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
   z-index: 1000;
 }
