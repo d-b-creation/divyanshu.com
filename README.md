@@ -3,11 +3,12 @@
 # divyanshu.com - Complete Normal HTML Website
 
 
-![divyanshu.com Website Preview](./images/banner1.png)
-![divyanshu.com Website Preview](./images/banner2.png)
-![divyanshu.com Website Preview](./images/banner3.png)
-![divyanshu.com Website Preview](./images/banner4.png)
-![divyanshu.com Website Preview](./images/banner5.png)
+![divyanshu.com Website Hero Section](./images/banner1.png)
+![divyanshu.com Website Service Section](./images/banner2.png)
+![divyanshu.com Website About Section](./images/banner3.png)
+![divyanshu.com Website Team Section](./images/banner4.png)
+![divyanshu.com Website Footer Section](./images/banner5.png)
+![divyanshu.com Website Admin Panel](./images/banner6.png)
 
 
 ## Overview
