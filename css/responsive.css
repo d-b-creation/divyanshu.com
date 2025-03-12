@@ -4,12 +4,10 @@
 
 @media (max-width: 992px) {
   .hero_area {
-    min-height: auto;
+    min-height: 0;
   }
 
-  .hero_area {
-    background: linear-gradient(130deg, #231a6f, #0f054c);
-  }
+  
 
   .hero_area .hero_bg_box {
     display: none;
