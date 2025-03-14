@@ -47,7 +47,7 @@
           <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
               <a class="navbar-brand pointer" href="../index.html">
-                <span><i class="fa-solid fa-web-awesome "></i> Divyanshu </span>
+                <span><i class="fa-solid fa-web-awesome"></i> Divyanshu </span>
               </a>
 
               <button
@@ -79,7 +79,11 @@
                     <a class="nav-link" href="./team.html">Team</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="http://localhost:3000/signin.html" title="Login">
+                    <a
+                      class="nav-link"
+                      href="http://localhost:3000/signin.html"
+                      title="Login"
+                    >
                       <i class="fa fa-user" aria-hidden="true"></i>
                     </a>
                   </li>
@@ -172,7 +176,7 @@
 
     <!-- info section -->
 
-    <section class="info_section layout_padding2">
+    <section id="info" class="info_section layout_padding2">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-3 info_col">
@@ -223,10 +227,10 @@
             <div class="info_link_box">
               <h4>Links</h4>
               <div class="info_links">
-                <a class="" href="../index.html"> Home </a>
-                <a class="active" href="./service.html"> Services </a>
-                <a class="" href="./about.html"> About </a>
-                <a class="" href="./team.html"> Team </a>
+                <a class="active" href="../index.html"> Home </a>
+                <a class="" href="../pages/about.html"> About </a>
+                <a class="" href="../pages/service.html"> Services </a>
+                <a class="" href="../pages/team.html"> Team </a>
               </div>
             </div>
           </div>
@@ -234,7 +238,9 @@
             <h4>Contact Us</h4>
             <form action="../index.html">
               <input type="text" placeholder="Enter email" />
-              <button type="submit">Contact</button>
+              <div type="submit" class="btn-box">
+                <a href="#info">Contact</a>
+              </div>
             </form>
           </div>
         </div>
@@ -248,8 +254,7 @@
       <div class="container">
         <p>
           &copy;
-          <span id="displayYear"></span> All
-          Rights Reserved By
+          <span id="displayYear"></span> All Rights Reserved By
           <a href="../index.html">Bhardwaj Computers</a>
         </p>
       </div>

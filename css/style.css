@@ -353,34 +353,38 @@ a:focus {
   }
 }
 
-.slider_section .detail-box .btn-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 -5px;
-  margin-top: 25px;
+.slider_section .btn-box a {
+  opacity: 0;
+  animation: slideupbtn 0.5s ease 1.5s forwards;  
 }
 
-.slider_section .detail-box .btn-box a {
-  margin: 5px;
-  text-align: center;
-  width: 165px;
-}
-
-.slider_section .detail-box .btn-box .btn1 {
+.btn-box a {
+  position: relative;
+  z-index: 1;
   display: inline-block;
-  padding: 10px 15px;
-  background-color: var(--active-color);
-  color: #ffffff;
-  transition: all 0.3s;
+  background: linear-gradient(200deg, #00c3ff, #0048ff);
+  color: var(--primary-color);
+  padding: 10px 45px;
   border: none;
   border-radius: 40px;
-  opacity: 0;
-  animation: slideupbtn 1s ease 1.3s forwards;
+  margin-top: 30px;
 }
 
-.slider_section .detail-box .btn-box .btn1:hover {
-  background-color: var(--hover-color);
+.btn-box a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+
+.btn-box a:hover::before {
+  filter: blur(10px);
+  background: linear-gradient(200deg, #00c3ff, #0048ff);
+  transition: all 0.22s ease;
 }
 
 @keyframes slideupbtn {
@@ -568,22 +572,9 @@ a:focus {
   margin-top: 45px;
 }
 
-.service_section .btn-box a {
-  display: inline-block;
-  padding: 10px 45px;
-  background-color: var(--active-color);
-  color: var(--primary-color);
-  border-radius: 40px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  border: none;
-}
-
-.service_section .btn-box a:hover {
-  background-color: var(--hover-color);
-}
-
 /* service section end */
+
+
 
 /* about section start */
 
@@ -615,30 +606,14 @@ a:focus {
   margin-top: 15px;
 }
 
-.about_section .detail-box a {
-  display: inline-block;
-  padding: 10px 45px;
-  background-color: var(--active-color);
-  color: var(--primary-color);
-  border-radius: 40px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  border: none;
-  margin-top: 15px;
-}
-
-.about_section .detail-box a:hover {
-  background-color: var(--hover-color);
-}
-
 /*team section */
+
 .team_section {
   text-align: center;
   background-color: var(--body-color);
   color: #ffffff;
-  padding-top: 100px;
-  padding-bottom: 172px;
-  padding: 100px 65px 172px 65px;
+  padding-right: 65px;
+  padding-left: 65px;
 }
 
 .team_section .heading_container {
@@ -714,6 +689,17 @@ a:focus {
 .team_section .team_container .box .social_box a .fa:hover {
   color: red;
 }
+
+.team_section .btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
 
 /*team section end*/
 
@@ -842,7 +828,6 @@ a:focus {
 }
 
 .info_section form button {
-  width: 100%;
   text-align: center;
   display: inline-block;
   padding: 10px 55px;
@@ -858,6 +843,13 @@ a:focus {
 .info_section form button:hover {
   background-color: #007fa4;
 }
+
+.info_section .btn-box a {
+  width: 100%;
+  text-align: center;
+}
+
+
 
 /* footer section*/
 

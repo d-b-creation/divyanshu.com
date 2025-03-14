@@ -8,7 +8,11 @@
 ![divyanshu.com Website About Section](./images/banner3.png)
 ![divyanshu.com Website Team Section](./images/banner4.png)
 ![divyanshu.com Website Footer Section](./images/banner5.png)
-![divyanshu.com Website Admin Panel](./images/banner6.png)
+![divyanshu.com Website Admin Login](./images/banner6.png)
+![divyanshu.com Website Admin Dashboard](./images/banner7.png)
+![divyanshu.com Website Admin Profile](./images/banner8.png)
+![divyanshu.com Website Web Video](./Web-view.mp4)
+
 
 
 ## Overview
